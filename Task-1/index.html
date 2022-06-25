@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Acme&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+    <title>Fancy Sailor</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__container __container">
+                <nav class="header__menu menu">
+                    <ul class="menu__list">
+                        <li class="menu__item"><a href="/" class="menu__link">HOME</a></li>
+                        <li class="menu__item"><a href="btn_exp" class="menu__link">ABOUT</a></li>
+                        <li class="menu__item"><a href="" class="menu__link">TEAM</a></li>
+                        <li class="menu__item"><a href="btn_book" class="menu__link">BOOKING</a></li>
+                    </ul>
+                </nav>
+            </div>
+                <a href="/" class="header__logo">
+                    <img src="/img/Logo.svg" alt="Логотип">
+                </a>
+            <div class="header__container __container">
+                <nav class="header__menu menu">
+                    <ul class="menu__list">
+                    <li class="menu__item"><a href="" class="menu__link">MENU</a></li>
+                    <li class="menu__item"><a href="" class="menu__link">GALERIE</a></li>
+                    <li class="menu__item"><a href="" class="menu__link">EVENTS</a></li>
+                    <li class="menu__item"><a href="" class="menu__link">CONTACT</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main class="page">
+            <div class="page__main-block main-block">
+                <div class="main-block__container __container">
+                    <div class="main-block__body">
+                        <div class="main-block__text">RESTAURANT</div>
+                        <h1 class="title main-block__title">Fancy SaIlor</h1>
+                        <div class="line">
+                            <img src="/img/Line.svg" alt="Линия">
+                        </div>
+                        <div class="main-block__buttons">
+                            <a href="#btn_book" class="buttons main-block__button">BOOK TABLE</a>    
+                            <a href="#btn_exp" class="buttons main-block__button main-block__button_border">EXPLORE</a> 
+                        </div>
+                    </div>
+                </div>
+                <div class="main-block__image">
+                    <img src="/img/Start.jpg" alt="Обложка">
+                </div>
+            </div>
+
+            <section class="page__about about">
+                <div class="about__container __container">
+                    <div class="about__body">
+                        <div class="about__content">
+                            <h2 id="btn_exp" class="title title__black about__title">ABOUT US</h2>
+                            <div class="line">
+                                <img src="/img/Line.svg" alt="Линия">
+                            </div>
+                            <div class="about__text about__text_1"><strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                                               Duis at velit maximus, molestie est a, tempor magna.</strong></div>
+                            <br>
+                            <div class="about__text about__text_2">Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. 
+                                                       Morbi non ultrices ligula. 
+                                                       Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. 
+                                                       Mauris tincidunt feugiat diam convallis pharetra. Nulla facilisis semper laoreet.</div>
+                        </div>
+                        <img class="image__about" src="/img/About.jpg" alt="Картинка">
+                    </div>
+                </div>   
+            </section>
+
+            <section class="page__book book">
+                <div class="book__container __container">
+                    <div class="book__body">
+                        <img class="image__book" src="/img/Book.png" alt="Картинка">
+                        <div class="book__content">
+                            <div class="book__form">
+                                <h2 id="btn_book" class="title title__black book__title">book a table</h2>
+                                        <div class="line">
+                                    <img src="/img/Line.svg" alt="Линия">
+                                        </div>
+                                <form action="" class="book__form__body">
+                                    <div class="book__form__column">
+                                        <div class="book__column__line">
+                                            <input autocomplete="off" placeholder="Name" type="text" name="form[]" class="input input__book">
+                                        </div>
+                                        <div class="book__column__line">
+                                            <input autocomplete="off" placeholder="Email" type="text" name="form[]" class="input input__book">
+                                        </div>
+                                    </div>
+                                    <div class="book__form__column">
+                                        <div class="book__column__line">
+                                            <input autocomplete="off" placeholder="Phone" type="text" name="form[]"  class="input input__book">
+                                        </div>
+                                        <div class="book__column__line">
+                                            <select class="select input">
+                                                <option value="1">People</option>
+                                                <option value="2">1</option>
+                                                <option value="3">2</option>
+                                                <option value="4">3</option>
+                                                <option value="5">4</option>
+                                                <option value="6">5</option>
+                                                <option value="7">6</option>
+                                                <option value="8">7</option>
+                                                <option value="9">8</option>
+                                                <option value="10">9</option>
+                                                <option value="11">10</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="book__form__column">
+                                        <div class="book__column__line">
+                                            <input autocomplete="off" placeholder="Date (mm/dd)" type="text" name="form[]" class="input input__book">
+                                        </div>
+                                        <div class="book__column__line">
+                                            <select class="select input">
+                                                <option value="1">Time</option>
+                                                <option value="2">8PM</option>
+                                                <option value="3">9PM</option>
+                                                <option value="4">10PM</option>
+                                                <option value="5">11PM</option>
+                                                <option value="6">12AM</option>
+                                                <option value="7">1AM</option>
+                                                <option value="8">2AM</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="book__button">
+                                        <button type="submit" class="buttons book__button">BOOK NOW</button> 
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="book__footer">
+                    <div class="book__footer__container __container">
+                        <div class="book__footer__text">Mon - Fri: <strong>8PM - 10PM</strong>, Sat - Sun: <strong>8PM - 3AM</strong>, Phone: <strong>+40 729 131 637/+40 726 458 782</strong></div>
+                </div>
+            </section>
+
+            <section class="page__pancakes pancakes">
+                <div class="pancakes__header">
+                    <div class="pancakes__header__container __container">
+                        <div class="pancakes__header__text">specialties</div>
+                </div>
+                <div class="pancakes__container __container">
+                    <div class="pancakes__body">
+                        <img class="image" src="/img/Pancakes.png" alt="Картинка">
+                        <div class="pancakes__content">
+                            <h2 id="btn_exp" class="title pancakes__title">chocolate pancakes</h2>
+                            <div class="line">
+                                <img src="/img/Line.svg" alt="Линия">
+                            </div>
+                            <div class="pancakes__text pancakes__text_1"><strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                                               Duis at velit maximus, molestie est a, tempor magna.</strong></div>
+                            <br>
+                            <div class="pancakes__text pancakes__text_2">Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. 
+                                                       Morbi non ultrices ligula. 
+                                                       Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. 
+                                                       Mauris tincidunt feugiat diam convallis pharetra. Nulla facilisis semper laoreet.</div>
+                        </div>
+                    </div>
+                </div> 
+                <div class="pancakes__image">
+                    <img src="/img/Cover_2.png" alt="Обложка">
+                </div>  
+            </section>
+
+            <section class="page__contact contact">
+                <div class="contact__container __container">
+                    <div class="contact__body">
+                        <div class="contact__content">
+                            <div class="contact__form">
+                                <h2 id="btn_contact" class="title title__black contact__title">contact</h2>
+                                <div class="line">
+                                    <img src="/img/Line.svg" alt="Линия">
+                                </div>
+                                <div class="contact__text"><strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                                                   Duis<br> at velit maximus, molestie est a, tempor magna.</strong></div>    
+                                <form action="" class="contact__form__body">
+                                    <div class="contact__form__column">
+                                        <div class="contact__column__line">
+                                            <input autocomplete="off" placeholder="Name" type="text" name="form[]" class="input input__contact">
+                                        </div>
+                                        <div class="contact__column__line">
+                                            <input autocomplete="off" placeholder="Email" type="text" name="form[]" class="input input__contact">
+                                        </div>
+                                        <div class="contact__column__line">
+                                            <input autocomplete="off" placeholder="Phone" type="text" name="form[]" class="input input__contact">
+                                        </div>
+                                    </div>
+                                    <div class="contact__form__column">
+                                        <div class="contact__column__line">
+                                            <textarea autocomplete="off" placeholder="Message" type="text" name="form[]" class="input input__contact textarea__contact"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="contact__button">
+                                        <button type="submit" class="buttons contact__button">SEND MESSAGE</button> 
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="footer__container container">
+                <div class="footer__copy">© Copyright <strong>Fancy Sailor</strong> 2014</div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
