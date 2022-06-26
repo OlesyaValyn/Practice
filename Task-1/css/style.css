@@ -1,4 +1,4 @@
-/*------------------------------------ОБНУЛЕНИЕ------------------------------------ */
+/*============================ОБНУЛЕНИЕ==============================================================*/
 *, ::before, ::after {
     padding: 0;
     margin: 0;
@@ -21,83 +21,45 @@ img {
 h1, h2, h3, h4, h5, h6 {
     font-weight: inherit;
     font-size: inherit;
+    margin: 0;
 }
 
 html, body {
     height: 100%;
     line-height: 1;
 }
-/*--------------------------------------------------------------------------------- */
+/*===================================================================================================*/
+.wrapper {
+    min-height: 100%;
+    overflow: hidden;
+}
+
+.container {
+    max-width: 1155px;
+    margin: 0px auto;
+    padding: 0px 15px;
+    box-sizing: content-box;
+}
+
+._ibg {
+    position: relative;
+}
+
+._ibg img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    object-fit: cover;
+}
+
 body {
     height: 100%;
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
     font-style: normal;
     color: #000000;;
-}
-
-.wrapper {
-    min-height: 100%;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-}
-
-.__container {
-    max-width: 1155px;
-    padding: 0px 15px;
-    margin: 0 auto;
-    box-sizing: content-box;
-}
-/*------------------------------------HEADER------------------------------------ */
-.header {
-    position: absolute;
-    width: 100%;
-    top: 0;
-    left: 0;
-    z-index: 50;
-    display: flex;
-}
-
-.header__container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 200px;
-}
-
-.menu__list {
-    display: flex;
-    justify-content: space-between;
-    padding: 0px 0px 100px 0px;
-}
-
-.menu__link {
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: 12px;
-    line-height: 18px;
-    color: #ffff;
-}
-
-.menu__item:not(:last-child) {
-    margin: 0px 60px 0px 0px;
-}
-
-.menu__link:hover {
-    color: #E8C300;
-}
-
-.header__logo {
-    display: block;
-    text-align: center;
-    padding: 25px 0px 0px 0px;
-}
-/*------------------------------------------------------------------------ */
-
-/*-----------------------------PAGE--------------------------------------- */
-.page {
-    flex: 1 1 auto;
 }
 
 .title {
@@ -123,23 +85,64 @@ body {
     min-height: 60px;
     cursor: pointer;
 }
+/*=====================================HEADER========================================================*/
+.header {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 50;
+}
 
+.header__container {
+    display: flex;
+    align-items: center;
+    min-height: 200px;
+}
 
-/*------------------------------------------------------------------------ */
+.header__column {
+    flex: 0 0 33.333%;
+}
 
-/*-----------------------------MAIN-BLOCK--------------------------------------- */
-.main-block {
+.menu__list {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 0px 100px 0px;
+}
+
+.menu__link {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 18px;
+    color: #ffff;
+}
+
+.menu__link:hover {
+    color: #E8C300;
+}
+
+.header__logo {
+    display: block;
+    text-align: center;
+}
+/*=====================================MAIN=========================================================*/
+.page {
+    flex: 1 1 auto;
+}
+
+.main {
     position: relative;
 }
 
-.main-block__body {
+.main__body {
     padding: 326px 0px 225px 0px;
     position: relative;
     z-index: 2;
     text-align: center;
 }
 
-.main-block__image {
+.main__image {
     position: absolute;
     display: flex;
     width: 100%;
@@ -148,57 +151,55 @@ body {
     left: 0;
 }
 
-.main-block__text {
-    font-weight: 700;
-    font-size: 12px;
+.main__text {
     line-height: 14px;
-    text-transform: uppercase;
     color: #ffff;
     margin: 0px 0px 70px 0px;
     letter-spacing: 0.5em;
 }
 
-.main-block__title {
+.main__title {
+    font-family: 'Acme';
+    font-style: normal;
+    font-weight: 400;
     font-size: 96px;
     line-height: 0px;
-    color: #ffff;
+    text-transform: uppercase;
+    color: #FFFFFF;
     margin: 0px 0px 70px 0px;
 }
 
-.main-block__buttons {
+.main__buttons {
     display: inline-flex;
     margin: 20px 0px 0px 0px;
 }
 
-.main-block__button {
+.main__button {
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     width: 200px;
-    padding: 5px 0px;
 }
 
-.main-block__button:not(:last-child) {
+.main__button:not(:last-child) {
     margin: 0px 40px 0px 0px;
 }
 
-.main-block__button:hover {
+.main__button:hover {
     background-color: #e8c10069;
 }
 
-.main-block__button_border {
+.main__button_border {
     background-color: transparent;
     border: 1px solid rgba(255, 255, 255, 0.5);
 }
 
-.main-block__button_border:hover {
+.main__button_border:hover {
     color: #ffff;
     background-color: #ffffff69;
 }
-/*--------------------------------------------------------------------------------- */
-
-/*--------------------------------ABOUT-------------------------------------------- */
+/*=====================================ABOUT=========================================================*/
 .about {
     padding: 100px 0px 80px 0px;
 }
@@ -238,9 +239,7 @@ body {
 .about__text_2 {
     font-weight: 500;
 }
-/*--------------------------------------------------------------------------------- */
-
-/*-------------------------------BOOK TABLE--------------------------------------- */
+/*=====================================BOOK========================================================*/
 .book__body {
     display: flex;
     align-items: center;
@@ -342,10 +341,6 @@ select:not([multiple]) {
 }
 
 .book__button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
     width: 563px;
 }
 
@@ -372,9 +367,7 @@ select:not([multiple]) {
     color: rgba(51, 51, 51, 0.5);
     border-radius: 5px;
 }
-/*--------------------------------------------------------------------------------- */
-
-/*-------------------------------PANCAKES------------------------------------------ */
+/*=====================================PANCAKES========================================================*/
 .pancakes{
     position: relative;
     padding: 0px 0px 100px 0px;
@@ -442,9 +435,7 @@ select:not([multiple]) {
 .pancakes__text_2 {
     font-weight: 500;
 }
-/*--------------------------------------------------------------------------------- */
-
-/*-------------------------------CONTACT------------------------------------------- */
+/*=====================================CONTACT========================================================*/
 .contact {
     padding: 90px 0px 76px 0px;
 }
@@ -507,15 +498,12 @@ select:not([multiple]) {
 }
 
 .contact__button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
     width: 1155px;
-    padding: 0px 0px;
 }
-/*--------------------------------------------------------------------------------- */
 
+.contact__button:hover {
+    background-color: #e8c100ab;
+}
 /*--------------------------------FOOTER------------------------------------------ */
 .footer {
     position: relative;
@@ -537,4 +525,3 @@ select:not([multiple]) {
     color: rgba(255, 255, 255, 0.5);
     border-radius: 5px;
 }
-/*--------------------------------------------------------------------------------- */
