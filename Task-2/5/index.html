@@ -1,0 +1,25 @@
+<!-- Реализовать функцию autosave, которая будет сохранять значение input один единственный раз для серии нажатий.  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>5</title>
+</head>
+<body>
+    <input id='input' type='text' placeholder='Input some value'>
+    <script>
+        var inputElement = document.getElementById('input');
+        inputElement.addEventListener('input', autosave);
+
+        var InputTimeOut = null;
+        function autosave() {
+            clearTimeout(InputTimeOut);
+            InputTimeOut = setTimeout(function() {
+                console.log(inputElement.value);
+            }
+            , 1500);
+        };
+    </script>
+</body>
+</html>
+
